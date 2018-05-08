@@ -1,0 +1,76 @@
+{
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "flow": "flow",
+    "flow:coverage": "flow-coverage-report --threshold=75 -i 'src/**/*.js' -t html -t json -t text",
+    "generate": "plop --plopfile scripts/generators/index.js",
+    "lint": "eslint --ext .jsx,.js -c .eslintrc src",
+    "lint:fix": "eslint --fix --ext .jsx,.js -c .eslintrc src",
+    "nsp": "nsp check",
+    "test:coverage": "npm run test -- --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js",
+      "!src/**/index.js",
+      "!src/**/registerServiceWorker.js",
+      "!src/**/*.container.js",
+      "!src/index.js",
+      "!src/tempPolyfills.js",
+      "!src/setupTests.js",
+      "!src/redux/reducers.js",
+      "!src/redux/sagas.js",
+      "!src/redux/store.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
+  },
+  "dependencies": {
+    "plop": "^1.9.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-intl": "^2.4.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.1",
+    "react-test-renderer": "^16.2.0",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "source-map-explorer": "^1.5.0",
+    "styled-components": "3.1.6",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.0",
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.44.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.12.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-mysticatea": "^4.2.4",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "flow-bin": "^0.66.0",
+    "flow-coverage-report": "^0.4.1",
+    "flow-typed": "^2.3.0",
+    "nsp": "^3.2.1",
+    "prettier": "^1.10.2"
+  }
+}

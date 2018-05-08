@@ -1,0 +1,61 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
+  ],
+  "plugins": [
+    "flowtype",
+    "import",
+    "jest",
+    "jsx-a11y",
+    "mysticatea",
+    "prefer-object-spread",
+    "prettier",
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "jest/globals": true,
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "alert": true,
+    "document": true,
+    "localStorage": true,
+    "navigator": true,
+    "window": true,
+    "HTMLElement": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false
+      }
+    ],
+    "mysticatea/no-useless-rest-spread": "error",
+    "prefer-object-spread/prefer-object-spread": 2,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prefer-stateless-function": 0,
+    "react/require-default-props": 0,
+    "react/prop-types": 0,
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1,
+    "flowtype/delimiter-dangle": [1, "always-multiline"],
+    "flowtype/semi": [1, "always"]
+  }
+}

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home> should render correctly 1`] = `
+<React.Fragment>
+  <styled.div>
+    <p>
+      <FormattedMessage
+        defaultMessage="To get started, edit"
+        id="home.get-started"
+        values={Object {}}
+      />
+      <code
+        className="intro-code"
+      >
+        src/App.js
+      </code>
+      <FormattedMessage
+        id="home.save-to-reload"
+        values={Object {}}
+      />
+    </p>
+    <p>
+      <FormattedMessage
+        id="home.create-route"
+        values={Object {}}
+      />
+    </p>
+    <p>
+      <FormattedMessage
+        id="home.generate-component"
+        values={Object {}}
+      />
+      <code
+        className="intro-code"
+      >
+        yarn generate
+      </code>
+    </p>
+    <p>
+      <FormattedMessage
+        id="home.generate-module"
+        values={Object {}}
+      />
+    </p>
+    <p>
+      <FormattedMessage
+        id="home.readme"
+        values={Object {}}
+      />
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      <FormattedMessage
+        id="home.click-me"
+        values={Object {}}
+      />
+    </button>
+    <Link
+      href="/avatar"
+      replace={false}
+      to="/avatar"
+    >
+      <FormattedMessage
+        id="home.use-a-link"
+        values={Object {}}
+      />
+    </Link>
+  </styled.div>
+</React.Fragment>
+`;

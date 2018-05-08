@@ -1,0 +1,7 @@
+{
+  "generator-theodo-stack": {
+    "appName": "koyoso",
+    "clientRequired": true,
+    "serverRequired": true
+  }
+}

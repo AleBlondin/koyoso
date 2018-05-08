@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The page component should render correctly 1`] = `
+<div
+  className="sc-bdVaJa hiBQnU"
+>
+  <button
+    onClick={[Function]}
+    tabIndex={0}
+  >
+    <span>
+      Retour
+    </span>
+  </button>
+  <p />
+  <p>
+    <input
+      className="github-avatar-input"
+      onChange={[Function]}
+      placeholder={undefined}
+      type="text"
+    />
+  </p>
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      <span>
+        Affiche l'avatar github
+      </span>
+    </button>
+  </p>
+</div>
+`;

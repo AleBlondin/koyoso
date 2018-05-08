@@ -1,0 +1,24 @@
+---
+- name: Install the package "apache2-utils"
+  apt:
+    name: apache2-utils
+    state: present
+
+- name: Create directory for fake certificate
+  file:
+    path: /etc/nginx/fake-data
+    state: directory
+    mode: 0644
+
+- name: Create fake certificate and key
+  command: openssl req -new -x509 -nodes -subj '/C=AU/ST=Some-State/L=""/O="Internet Widgits Pty Ltd"' -out /etc/nginx/fake-data/cert.crt -keyout /etc/nginx/fake-data/key.key
+  args:
+    creates: /etc/nginx/fake-data/cert.crt
+
+- name: Create enhanced Diffie-Hellman parameters
+  command: openssl dhparam -out /etc/nginx/dhparams.pem 2048
+  args:
+    creates: /etc/nginx/dhparams.pem
+
+- name: restart nginx
+  service: name=nginx state=restarted

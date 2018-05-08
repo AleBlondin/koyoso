@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Root> should render correctly 1`] = `
+<IntlProvider
+  locale="fr"
+  messages={
+    Object {
+      "home.click-me": "Click sur moi",
+      "home.create-route": "Pour créer une route, modifie routes.js et associe une page",
+      "home.generate-component": "Pour créer une page ou un simple composant, lance: ",
+      "home.generate-module": "Pour ajouter de la logique métier, créer un dossier dans redux avec tes reducers/actions/sagas/selectors/constants/...",
+      "home.get-started": "Pour commencer, modifie",
+      "home.readme": "Lis le README.md pour découvrir les super commandes npm que nous avons ajouté",
+      "home.save-to-reload": "et sauvegarde pour recharger.",
+      "home.use-a-link": "Ou utilise un lien",
+      "page.add-github-username": "Entrer un username github",
+      "page.api-to-translate-example": "Ce message est traduit en utilisant directement l'API react-intl",
+      "page.back": "Retour",
+      "page.fetch-github-avatar": "Affiche l'avatar github",
+    }
+  }
+>
+  <styled.div>
+    <div
+      className="header"
+    >
+      <img
+        alt="logo"
+        className="logo"
+        src="logo.svg"
+      />
+      <h2>
+        Welcome to React
+      </h2>
+    </div>
+    <div>
+      <span>
+        test
+      </span>
+    </div>
+  </styled.div>
+</IntlProvider>
+`;

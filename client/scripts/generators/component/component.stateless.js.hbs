@@ -1,0 +1,40 @@
+// @flow
+import React from 'react';
+{{#if wantMessages}}
+import { intlShape, FormattedMessage } from 'react-intl';
+{{/if}}
+
+{{#unless wantStyledComponents}}
+import './{{ properCase name }}.style.css';
+{{/unless}}
+{{#if wantStyledComponents}}
+import { Container } from './{{ properCase name }}.style';
+{{/if}}
+
+type Props = {
+  {{#if wantMessages}}
+  intl: intlShape,
+  {{/if}}
+};
+
+const {{ properCase name }} = (props: Props) => {
+  return (
+    {{#unless wantStyledComponents}}
+    <div className="{{ dashCase name }}-container">
+    {{/unless}}
+    {{#if wantStyledComponents}}
+    <Container>
+    {{/if}}
+      {{#if wantMessages}}
+      <FormattedMessage id="please.change.me" />
+      {{/if}}
+    {{#unless wantStyledComponents}}
+    </div>
+    {{/unless}}
+    {{#if wantStyledComponents}}
+    </Container>
+    {{/if}}
+  );
+};
+
+export default {{ properCase name }};

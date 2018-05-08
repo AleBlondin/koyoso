@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App> <Route> should render the Root component 1`] = `
+<Connect(Root)>
+  <routes />
+</Connect(Root)>
+`;
+
+exports[`<App> should render correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter
+    basename="/"
+  >
+    <Route
+      component={[Function]}
+      path="/"
+    />
+  </BrowserRouter>
+</Provider>
+`;

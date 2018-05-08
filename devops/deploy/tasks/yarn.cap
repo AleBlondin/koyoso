@@ -1,0 +1,21 @@
+namespace :yarn do
+  task :build do
+    on roles fetch(:yarn_roles) do
+      within fetch(:yarn_target_path, release_path) do
+        with fetch(:yarn_env_variables, {}) do
+          execute fetch(:yarn_bin), 'build'
+          execute 'ln', '-s', '../client/build', '../web/build'
+        end
+      end
+    end
+  end
+
+  before 'deploy:updated', 'yarn:build'
+end
+
+namespace :load do
+  task :defaults do
+    set :yarn_roles, :all
+    set :yarn_bin, :yarn
+  end
+end
